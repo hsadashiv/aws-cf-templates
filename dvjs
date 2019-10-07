@@ -1,0 +1,160 @@
+[1mdiff --git a/dssdks b/dssdks[m
+[1mdeleted file mode 100644[m
+[1mindex 4f278ef..0000000[m
+[1m--- a/dssdks[m
+[1m+++ /dev/null[m
+[36m@@ -1,202 +0,0 @@[m
+[31m-* [33m04d91f8[m[33m ([m[1;36mHEAD -> [m[1;32mfeature[m[33m)[m added third line in feature[m
+[31m-[31m|[m * [33me69f78a[m[33m ([m[1;32mmaster[m[33m)[m second line added to file in master[m
+[31m-[31m|[m[31m/[m  [m
+[31m-* [33mc22cada[m committed new file in master[m
+[31m-* [33m696aae5[m empty commit messaga[m
+[31m-* [33mc4342ee[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m type iy[m
+[31m-* [33m4699303[m[33m ([m[1;33mtag: v10.6.0[m[33m)[m [Security] jenkins/* - Update Jenkins to 2.190.1 https://jenkins.io/changelog-stable//#v2.190.1 (#352)[m
+[31m-* [33ma11881a[m [New Template] state/rds-aurora-serverless-postgres - RDS Aurora Serverless PostgreSQL (#351)[m
+[31m-* [33m305efd6[m[33m ([m[1;33mtag: v10.5.0[m[33m)[m [Security] ecs/cluster - Update Amazon Linux 2 optimized for ECS to 20190709 (#347)[m
+[31m-* [33m06a0a03[m [Security] * - Update Amazon Linux 2 to 20190823.1 (#346)[m
+[31m-* [33m5241286[m [Security] wordpress/* - Update WordPress to 5.2.3 (#345)[m
+[31m-* [33m8cf9082[m fix[m
+[31m-* [33m5a8a4d4[m add integration notice[m
+[31m-* [33md9388eb[m [Security] jenkins/* - UpdateJenkins to 2.176.3 (#344)[m
+[31m-* [33mb6e0bca[m[33m ([m[1;33mtag: v10.4.0[m[33m)[m [Improvement] * - Improve alarms to not flip into insufficient data state (#343)[m
+[31m-* [33m0fc3a3e[m [Bug Fix] vpc/vpc-endpoint - ParentClientStack parameter was not optional as documented[m
+[31m-* [33m57a9b5c[m [Improvement] state/elasticsearch - Support for Elasticsearch 6.8 and 7.1 (#340)[m
+[31m-* [33mee310f6[m fix fix[m
+[31m-* [33ma7ec0f5[m fix test[m
+[31m-* [33mbf594b6[m[33m ([m[1;33mtag: v10.3.0[m[33m)[m [New Template] vpc/vpc-flow-logs-s3 - Deliver VPC Flow Logs to S3 (#336)[m
+[31m-* [33me6d3049[m [Improvement] * - Support to disable AWS Backup (#339)[m
+[31m-* [33m0645bac[m [Improvement] state/dynamodb - Enable point in time recovery[m
+[31m-* [33m9cc75a3[m [Improvement] * - Enable AWS Backup for EFS file systems (#338)[m
+[31m-* [33mef0dd94[m [Improvement] state/dynamodb - Enable AWS Backup (#337)[m
+[31m-* [33m732f76d[m [Improvement] * - Enable in-transit encryption on EFS mounts (#335)[m
+[31m-* [33m6a04229[m improve cfn-modules title[m
+[31m-* [33m4494093[m[33m ([m[1;33mtag: v10.2.0[m[33m)[m [Security] * - Update Amazon Linux 2 to 2.0.20190508 and ECS optimized Amazon Linux 2 to 2.0.20190618 (#334)[m
+[31m-* [33m7e67047[m [Security] jenkins/* - Update Jenkins to 2.176.2 (#333)[m
+[31m-* [33m54d8db5[m [Improvement] wordpress/* - Update WordPress to 5.2.2 (#332)[m
+[31m-* [33m73a13ac[m [Improvement] jenkins/* - Update Jenkins to 2.176.1 (#330)[m
+[31m-* [33mdf2d652[m[33m ([m[1;33mtag: v10.1.0[m[33m)[m [Improvement] state/dynamodb - Support optional stream (#328)[m
+[31m-* [33mf4d0d1d[m [Improvement] jenkins/*, wordpress/*, vpc/vpc-vpn-bastion - Support EFS throughput mode provisioned (#327)[m
+[31m-* [33md40a0af[m [Improvement] state/dynamodb - Support TTL (#326)[m
+[31m-* [33md32e3ac[m [Improvement] state/elasticsearch - Support ElasticSearch version 6.7 (#325)[m
+[31m-[32m|[m * [33m934bb88[m[33m ([m[1;31morigin/es-6-7[m[33m)[m [Improvement] state/elasticsearch - Support ElasticSearch version 6.7[m
+[31m-[32m|[m[32m/[m  [m
+[31m-* [33m71c6d45[m[33m ([m[1;33mtag: v10.0.0[m[33m)[m [Security] * -Get rid of managed policies (breaking change)[m
+[31m-* [33m310d01c[m [Improvement] fargate/service-* - renaming Ambassador* to Proxy* (breaking change)[m
+[31m-[33m|[m *   [33mc4b0ac2[m[33m ([m[1;31morigin/pipeline[m[33m)[m Merge branch 'master' into pipeline[m
+[31m-[33m|[m [34m|[m[33m\[m  [m
+[31m-[33m|[m [34m|[m[33m/[m  [m
+[31m-[33m|[m[33m/[m[34m|[m   [m
+[31m-[33m|[m *   [33mfee3235[m Merge branch 'master' into pipeline[m
+[31m-[33m|[m [36m|[m[1;31m\[m  [m
+[31m-[33m|[m * [1;31m\[m   [33m4d32da9[m Merge branch 'master' into pipeline[m
+[31m-[33m|[m [1;32m|[m[1;33m\[m [1;31m\[m  [m
+[31m-[33m|[m * [1;33m\[m [1;31m\[m   [33mb8296c3[m Merge branch 'master' into pipeline[m
+[31m-[33m|[m [1;34m|[m[1;35m\[m [1;33m\[m [1;31m\[m  [m
+[31m-[33m|[m * [1;35m|[m [1;33m|[m [1;31m|[m [33mf09efd7[m added license[m
+[31m-[33m|[m * [1;35m|[m [1;33m|[m [1;31m|[m   [33m3c4c1d5[m Merge branch 'master' into pipeline[m
+[31m-[33m|[m [1;36m|[m[31m\[m [1;35m\[m [1;33m\[m [1;31m\[m  [m
+[31m-[33m|[m * [31m\[m [1;35m\[m [1;33m\[m [1;31m\[m   [33m1fe2678[m Merge branch 'master' into pipeline[m
+[31m-[33m|[m [32m|[m[33m\[m [31m\[m [1;35m\[m [1;33m\[m [1;31m\[m  [m
+[31m-[33m|[m * [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m9f172f6[m revert[m
+[31m-[33m|[m * [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m4f72803[m chabge instance type[m
+[31m-[33m|[m * [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m3eb4ed5[m fixed yaml[m
+[31m-[33m|[m * [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33me3ffdfa[m enable production[m
+[31m-[33m|[m * [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m3abaab5[m fix yaml[m
+[31m-[33m|[m * [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m4485c9a[m debug[m
+[31m-[33m|[m * [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33mcfca77d[m join should work[m
+[31m-[33m|[m * [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m7a49bdd[m try to fix yaml[m
+[31m-[33m|[m * [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m60ba2d5[m fix yaml[m
+[31m-[33m|[m * [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33md8c29ed[m enable production stage and added missing Sub[m
+[31m-[33m|[m * [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m5cbacb1[m added all params[m
+[31m-[33m|[m * [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33ma6e34f8[m added pipeline demo[m
+[31m-[33m|[m [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m *   [33mc322d67[m[33m ([m[1;31morigin/fargate-renaming-ambassador[m[33m)[m Merge branch 'master' into fargate-renaming-ambassador[m
+[31m-[33m|[m [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [34m|[m[33m\[m  [m
+[31m-[33m|[m [33m|[m[33m_[m[33m|[m[33m_[m[31m|[m[33m_[m[1;35m|[m[33m_[m[1;33m|[m[33m_[m[1;31m|[m[33m_[m[34m|[m[33m/[m  [m
+[31m-[33m|[m[33m/[m[33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [34m|[m   [m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [34m|[m [33m2727d86[m [Improvement] security/cloudtrail - Recording S3 data events[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [34m|[m [33mb0b8a89[m[33m ([m[1;33mtag: v9.14.0[m[33m)[m [Improvement] ecs/cluster - Remove unneeded ruby dependencies (now moved to Lambda) (#320)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [34m|[m [33m7916472[m [Improvement] wordpress/* - Update WordPress to 5.2.1 (#319)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [34m|[m [33mf059fd4[m [Improvement] state/* - support multiple engine versions for data stores (#318)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [34m|[m [33me05aeef[m [Security] * - Update Amazon Linux 2 to 20190508 (#317)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [34m|[m [33m3a8e974[m [Bug Fix] static-website/lambdaedge-index-document - Support uppercase file endings (#314)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [34m|[m [33m85c3638[m [Improvement] ecs/cluster - Updating ECS AMI to 2.0.20190510[m
+[31m-[35m|[m [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m * [33m5a4043c[m fargate/service-* renaming Ambassador* to Proxy*[m
+[31m-[35m|[m [33m|[m[35m_[m[33m|[m[35m_[m[31m|[m[35m_[m[1;35m|[m[35m_[m[1;33m|[m[35m_[m[1;31m|[m[35m/[m  [m
+[31m-[35m|[m[35m/[m[33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m   [m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m585f3d3[m Improvement] ecs/cluster - ECS Stop Container Timeout, Avoid ECS API request limits, ...[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m0fe0ce0[m[33m ([m[1;33mtag: v9.13.0[m[33m)[m [Bug Fix] * - Fixed missing logs:CreateLogGroup permission (#312)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33mf44292b[m [Bug Fix] wordpress/* - Fixed missing logs:CreateLogGroup permission[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m3809397[m [Bug Fix] state/rds-aurora-serverless - Workaround for CloudFormation bug (#310)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m6b31bd2[m[33m ([m[1;33mtag: v9.12.0[m[33m)[m [New Template] vpc/vpc-endpoint - Generic VPC Endpoints (#234)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m6faff3c[m [Improvement] wordpress/* - Update WordPress to 5.2[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33mfdf09b7[m [Improvement] jenkins/* - Update Jenkins to 2.164.3 (#309)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m8bb5943[m [Improvement] ecs/cluster - Avoid scaling deadlock (#306)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33mf3a2bac[m[33m ([m[1;33mtag: v9.11.0[m[33m)[m [Security] *  - Update Amazon Linux 2 to 2.0.20190115 and AL 2 ECS optimized to 2.0.20190301 (#305)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m9bcf822[m [Improvement] state/rds-aurora-serverless - Support capacity of 1[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33mdb0ba28[m [Security] jenkins/jenkins2-ha* - Update Jenkins to 2.164.2[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m4825ab7[m [Bug Fix] security/account-password-policy - allow to disable MaxPasswordAge and PasswordReusePrevention[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m2468358[m[33m ([m[1;33mtag: v9.10.0[m[33m)[m [Improvement] state/s3 - Add read access via VPC endpoint[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33mf2a1b3c[m [Improvement] static-website/static-website - Add BucketName to outputs[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m7a78b52[m [Bug Fix] vpc/vpc-endpoint-* - Deploy endpoint to public subnets as well[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m0f225f3[m[33m ([m[1;33mtag: v9.9.0[m[33m)[m improving IAM policy for ECS cluster instances (#298)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m0018787[m inline Lambda and fix missing awaits[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m7b4bba7[m [Improvement] ecs/cluster - Support draining timeout of up to 24 hours for long running tasks (previously 2 hours)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33mcfeec2a[m[33m ([m[1;33mtag: v9.8.0[m[33m)[m Update Lambda functions to node 8.10[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m8561b42[m [Improvement] jenkins/* - Update Jenkins to 2.164.1[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m6e9f04c[m[33m ([m[1;33mtag: v9.7.0[m[33m)[m [Security] wordpress/* - Update WordPress to 5.1.1 (#284)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33me76bdb4[m [Bug Fix] fargate/service-* - Fix 0.5 CPU value[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m0bce6f6[m[33m ([m[1;33mtag: v9.6.0[m[33m)[m [Security] ecs/cluster - Update ECS-optimized Amazon Linux 2 to 2.0.20190301[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33mf445ee8[m [Improvement] vpc/vpc-vpn-bastion - Update SoftEther to v4.29-9680[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33md53953d[m[33m ([m[1;33mtag: v9.5.0[m[33m)[m [Bug Fix] security/account-password-policy - Boolean values parsing was broken[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m4dcd4b8[m [Bug Fix] security/cloudtrail - Internal bucket with log prefix was not working[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m9abe8f7[m [Bug Fix] ecs/cluster - Fix deregistration bug during scale in[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m24ff634[m [Improvement] wordpress/* - Update WordPress to 5.1 (#275)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33mb581333[m[33m ([m[1;33mtag: v9.4.0[m[33m)[m [Improvement] * - Use UpdateReplacePolicy to create a snapshot if the  data of CloudFormation replaces the resource (#271)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m1e7e907[m [Improvement] jenkins/jenkins2-ha* - Update Jenkins to 2.150.3[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33mb18e062[m increase parallel tests[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33mbb1eede[m[33m ([m[1;33mtag: v9.3.0[m[33m)[m [Security] ecs/cluster - Update Amazon ECS-Optimized Amazon Linux 2 AMI to 20190204 (#270)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m612de1d[m [Improvement] static-website/static-website - Add optional support for access logs (#269)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m5e35020[m consistent parameter names in docs[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33mfe02ec0[m fix docs[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m37ff5dc[m[33m ([m[1;33mtag: v9.2.0[m[33m)[m Fargate service with Cloud Map support (#264)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33mcb39cfa[m [Improvement] jenkins/* - Migrate to Amazon Corretto[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33mf08af17[m [Bug Fix] * - Get rid of DesiredCapacity in auto scaling groups (#266)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m7e7afac[m [Improvement] ecs/cluster, jenkins/jenkins2-ha-agents - Improve SQS message polling (#267)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m499343e[m [Improvement] state/elasticache-redis - Set default value for AuthToken parameter[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33me60cd10[m[33m ([m[1;33mtag: v9.1.0[m[33m)[m [Security] ecs/cluster - Update Amazon Linux 2 (optimized for ECS) to 2.0.20190118[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33mbd6af97[m [Security] * - Update Amazon Linux 2 to 2.0.20190115[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33md2fce64[m [Bug Fix] state/s3 - fix Access := ElbAccessLogWrite (#262)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33md639a9c[m [Security] jenkins/jenkins-ha* - Update Jenkins to 2.150.2 https://jenkins.io/changelog-stable/#v2.150.2[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m8359135[m[33m ([m[1;33mtag: v9.0.0[m[33m)[m update docs[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33md2a1299[m increase number of parallel tests[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m4c844c3[m fix typos[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33md12027a[m v9 (#238)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m62d66aa[m improve CloudFormation Quick Create links[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m4d21f0a[m[33m ([m[1;33mtag: v8.3.1[m[33m)[m The string substitution is not possible in codepipeline so we have tosplit the env into two parameters (#257)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m467182e[m[33m ([m[1;33mtag: v8.3.0[m[33m)[m [New Template] fargate/service-cluster-alb - service that runs on a Fargate cluster and uses the cluster ALB[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33mebebb73[m Update cfn-lint and awscli dependencies for travis ci[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m288aebb[m [Improvement] wordpress/wordpress-ha* - Update WordPress to 5.0.3[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33m300ccd4[m revert changes[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [1;31m|[m [33mf5d7932[m Elasticache redis (#252)[m
+[31m-[1;31m|[m [33m|[m[1;31m_[m[33m|[m[1;31m_[m[31m|[m[1;31m_[m[1;35m|[m[1;31m_[m[1;33m|[m[1;31m/[m  [m
+[31m-[1;31m|[m[1;31m/[m[33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m   [m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [33mfb84f86[m [Bug Fix] * - IAM SSH access was broken[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [33m3c6bccf[m Enable access logging for load balancers (#250)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [33md91e475[m fix docs[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [33m935d24a[m Fargate support (3rd iteration) (#249)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [33mb4502de[m [Improvement] wordpress/wordpress-ha* - Update WordPress to 5.0.2[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [33m6c0e690[m[33m ([m[1;33mtag: v8.2.0[m[33m)[m [Security] wordpress/wordpress-ha* - Update to WordPress 5.0.1[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [33m37d338c[m [Improvement] * - support for new region eu-north-1[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [33mb62149f[m [Improvement] ec2/ec2-auto-recovery - Support for client security groups[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [33ma727e6f[m[33m ([m[1;33mtag: v8.1.1[m[33m)[m [Bug Fix] state/elasticache-memcached - DeletionPolicy snapshot not supported[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [33m8d8c860[m[33m ([m[1;33mtag: v8.1.0[m[33m)[m [Improvement] * - Optimize DeletionPolicy[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [33m7dc8c53[m [New Template] security/kms-key-legacy - Added option to use existing key[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [33m058c283[m [Improvement] ecs/cluster - Support for client security groups[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [33m2e795e3[m [Improvement] wordpress/* - Update WordPress to 5.0[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [33m8c8bf5e[m docker is now part of the extras library[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [33mb6ca5cd[m [Improvement] state/dynamodb - add support for DynamoDB on-demand[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [33mfc9ef0d[m [Improvement] ecs/cluster - Speed up ruby setup (#229)[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [33ma9db7e7[m [Security] * - Update Amazon Linux to 2018.03.0.20181116 and Amazon Linux 2 to 2.0.20181114[m
+[31m-* [33m|[m [33m|[m [31m|[m [1;35m|[m [1;33m|[m [33m547589b[m [Security] jenkins/jenkins-ha* - Update Jen
